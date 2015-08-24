@@ -5,76 +5,14 @@
 <title>Payment Information</title>
 </head>
 <body>
-<form action=ProcessForm.java" method="post">
-  <h1>Payment form</h1>
-  <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
- 
-  <section>
-  <h2>Contact information</h2>
-
-      <label for="title_1">
-      Mr.
-      <input type="radio" id="title_1" name="title" value="A" />
-      </label>
-
-      <label for="title_2">
-      Ms.
-      <input type="radio" id="title_2" name="title" value="A" />
-      
-      </label>
- 
-  <p>
-    <label for="name">
-    <span>Name: </span>
-    <input type="text" id="name"  name="username" value="Username" required />
-    <strong><abbr title="required">*</abbr></strong>
-    </label>
-  </p>
- 
-   <p>
-    <label for="mail">
-    <span>E-mail: </span>
-    <input type="email" id="mail" name="usermail" value="Usermail" required />
-    <strong><abbr title="required">*</abbr></strong>
-    </label>
-  </p>
-  </section>
- 
-  <section>
-  <h2>Payment information</h2>
- 
-  <p>
-    <label for="card">
-    <span>Card type:</span>
-    <select id="card" name="usercard" value="Usercard">
-      <option value="visa">Visa</option>
-      <option value="mc">Mastercard</option>
-      <option value="amex">American Express</option>
-    </select>
-    </label>
-  </p>
-  <p>
-    <label for="number">
-    <span>Card number:</span>
-    <input type="text" id="number" name="cardnumber" value="Cardnumber" required />
-    <strong><abbr title="required">*</abbr></strong>
-    </label>
-  </p>
-  <p>
-    <label for="date">
-    <span>Expiration date:</span>
-    <input type="text" id="date" name="expiration" required value="Expiration"/>
-    <strong><abbr title="required">*</abbr></strong>
-    <em>formated as mm/yy</em>
-    </label>
-  </p>
-  </section>
- 
-  <section>
-  <p>
-    <button>Validate</button>
-  </p>
-  </section>
+<form action="ProcessForm.java" method="post">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
 </form>
 </body>
 </html>
